@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  width: 1200px;
+  margin: 0 auto;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+img{
+  min-width: 100%;
+  vertical-align: middle;
+}
+ul{
+  list-style: none;
+}
+/* Margin and Padding */
+@for $i from 1 through 10 {
+
+  .mt-#{$i * 10} {
+      margin-top: $i * 10px;
+    }
+  
+    .mb-#{$i * 10} {
+      margin-bottom: $i * 10px;
+    }
+
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+
+}
+
+$list: left, center, right, justify;
+@each $value in $list {
+  .text-#{$value} {
+    text-align: $value;
+  }
+}
