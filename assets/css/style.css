@@ -6,6 +6,8 @@ body {
   font-weight: 400;
 }
 
+/* Common Color */
+/* Theme Color */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +19,7 @@ body {
   margin: 0 auto;
 }
 
-.fix::before, .fix::after {
+.fix:before, .fix:after {
   content: "";
   clear: both;
   display: table;
@@ -26,6 +28,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  transition: 0.3s;
 }
 
 img {
@@ -35,6 +38,54 @@ img {
 
 ul {
   list-style: none;
+}
+
+/* Background css*/
+.bg {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.bg:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+/*Button css*/
+.btn {
+  padding: 10px 40px;
+  text-transform: capitalize;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 3px;
+  color: #fff;
+}
+.btn.box-btn {
+  background-color: #ff7720;
+  transition: 0.3s;
+}
+.btn.box-btn:hover {
+  background-color: transparent;
+  border: 2px solid #ff7720;
+  padding: 8px 40px;
+}
+.btn.border-btn {
+  border: 2px solid #ff7720;
+  background-color: transparent;
+  padding: 8px 40px;
+  transition: 0.3s;
+}
+.btn.border-btn:hover {
+  background-color: #ff7720;
+  color: #fff;
 }
 
 /* Margin and Padding */
@@ -214,8 +265,8 @@ ul {
   text-align: justify;
 }
 
-/* Common Colors */
-/*Theme Colors*/
+/* Common Color */
+/* Theme Color */
 .header-area {
   padding: 20px 0;
 }
@@ -242,10 +293,24 @@ ul {
 }
 .header-area ul li a {
   font-size: 18px;
-  color: #000;
+  color: #333;
   font-weight: 600;
   text-transform: uppercase;
 }
 .header-area ul li a:hover {
   color: #ff7720;
+}
+
+.banner-content {
+  color: #fff;
+}
+.banner-content h2 {
+  font-size: 50px;
+}
+.banner-content p {
+  max-width: 500px;
+  margin: 30px auto;
+}
+.banner-content a {
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */
