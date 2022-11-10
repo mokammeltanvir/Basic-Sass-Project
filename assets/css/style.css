@@ -17,6 +17,12 @@ body {
   margin: 0 auto;
 }
 
+.fix::before, .fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -209,4 +215,37 @@ ul {
 }
 
 /* Common Colors */
-/*Theme Colors*//*# sourceMappingURL=style.css.map */
+/*Theme Colors*/
+.header-area {
+  padding: 20px 0;
+}
+.header-area .logo {
+  float: left;
+  width: 220px;
+}
+.header-area .logo a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+.header-area .menu {
+  float: right;
+  width: 980px;
+  text-align: right;
+}
+.header-area ul {
+  text-align: right;
+}
+.header-area ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.header-area ul li a {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header-area ul li a:hover {
+  color: #ff7720;
+}/*# sourceMappingURL=style.css.map */

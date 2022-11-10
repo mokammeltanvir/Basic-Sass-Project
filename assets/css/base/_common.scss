@@ -8,6 +8,11 @@
   margin: 0 auto;
 
 }
+.fix::before, .fix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
 a{
   text-decoration: none;
   color: black;
