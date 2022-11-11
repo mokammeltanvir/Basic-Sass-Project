@@ -88,6 +88,33 @@ ul {
   color: #fff;
 }
 
+/* Section Title css*/
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title h4 {
+  text-transform: capitalize;
+  font-size: 46px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+}
+.section-title h4:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #ff7720;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 /* Margin and Padding */
 .mt-10 {
   margin-top: 10px;
@@ -313,4 +340,27 @@ ul {
 }
 .banner-content a {
   margin: 0 10px;
+}
+
+.single-about {
+  border: 1px solid #ddd;
+  padding: 40px 20px;
+  float: left;
+  width: 380px;
+  margin-right: 30px;
+}
+.single-about:last-child {
+  margin-right: 0;
+}
+.single-about h4 {
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.single-about p {
+  margin-top: 20px 0;
+}
+.single-about a {
+  color: #333;
 }/*# sourceMappingURL=style.css.map */
