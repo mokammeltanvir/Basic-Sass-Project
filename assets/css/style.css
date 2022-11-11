@@ -404,4 +404,42 @@ ul {
 .single-service .service-icon i {
   font-size: 50px;
   color: #ff7720;
+}
+
+.single-portfolio {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+  position: relative;
+}
+.single-portfolio:last-child {
+  margin-right: 0;
+}
+.single-portfolio h4 {
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.cta-area {
+  color: #fff;
+}
+.cta-area h4 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.cta-area p {
+  font-size: 18px;
+  margin: 30px 0;
 }/*# sourceMappingURL=style.css.map */
