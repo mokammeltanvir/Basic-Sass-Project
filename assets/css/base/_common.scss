@@ -47,7 +47,8 @@ ul{
 }
 /*Button css*/
 .btn{
-  padding: 10px 40px;
+  border: 2px solid $primary-color;
+  padding: 8px 40px;
   text-transform: capitalize;
   font-size: 18px;
   display: inline-block;
@@ -58,8 +59,7 @@ ul{
     transition: .3s;
     &:hover{
       background-color: transparent;
-      border: 2px solid $primary-color;
-      padding: 8px 40px;
+      
     }
   }
   &.border-btn{

@@ -1,0 +1,44 @@
+.services-area{
+  background-color: $bg_gray;
+}
+.single-service {
+  background-color: $white;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 30px;
+  float: left;
+  width: 350px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover{
+    background-color: $bg_gray;
+    transition: .3s;
+    box-shadow: $primary-color 0px 0px 0px 1px;
+  }
+
+  h4 {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a {
+    color: $black;
+    
+  }
+  .service-icon{
+    margin-bottom: 10px;
+    i{
+      font-size: 50px;
+      color: $primary_color;
+    }
+  }
+}
